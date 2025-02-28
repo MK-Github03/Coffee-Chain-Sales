@@ -1,64 +1,33 @@
+# **Coffee Chain Sales Data Analysis**
 
-# Coffee Chain Sales Data Analysis Team Project
+## **Project Overview**
+This project focuses on applying multivariate techniques to analyze a large sales dataset from a coffee chain. The objective is to uncover patterns, develop predictive models, and derive actionable business insights from the data.
 
-**Course**: DSC 424 - Advanced Data Analysis  
-**Project Title**: Comprehensive Analysis of Coffee Chain Sales Dataset  
+## **Dataset**
+The dataset contains sales information, including product categories, regional sales, profits, and time-based trends. It includes a mix of categorical and continuous variables, making it suitable for advanced analytical techniques.
 
-## Team Members:
-1. Manoj kumar Ashok - GitHub: [MK-github03](https://github.com/MK-github03) 
-2. Vishal - GitHub: [Vishal-412](https://github.com/Vishal-412)
-3. Ankita Mishra - GitHub: [midnightsun257](https://github.com/midnightsun257)
-4. Jason Nowak - GitHub: [jasonnowak](https://github.com/jasonnowak)
-
-## Project Overview:
-This project is part of the final requirements for the course **DSC 424: Advanced Data Analysis**. Our objective is to apply multivariate techniques to analyze a large dataset. Specifically, we are using sales data from a coffee chain to uncover patterns, create predictive models, and derive actionable business insights.
-
-### Dataset:
-The dataset we are using contains sales data from a coffee chain, with information such as product categories, regional sales, profits, and various time periods. It contains a diverse mix of both categorical and continuous variables, making it suitable for the multivariate analyses covered in this course.
-
-- **Dataset file**: [`Coffee_Chain_Sales.csv`](https://github.com/midnightsun257/Coffee-Chain-Sales/blob/main/Updated_Coffee_Chain_Sales.csv)
+- **Dataset File**: [`Coffee_Chain_Sales.csv`](https://github.com/midnightsun257/Coffee-Chain-Sales/blob/main/Updated_Coffee_Chain_Sales.csv)
 - **Total Variables**: Over 20 variables, including metric, ordinal, and categorical types.
-- **Observations**: 400+ entries, fulfilling the project requirements.
+- **Observations**: 400+ entries.
 
-## Goals of the Project:
-Our analysis aims to address the following:
+## **Project Goals**
+The analysis aims to achieve the following:
 
 - **Predictive Modeling**: Develop models to predict continuous variables such as sales and profit.
-- **Classification**: Use techniques like discriminant analysis to classify regions, products, or customer types based on various features.
-- **Clustering**: Uncover new classifications or groups in the data, such as segments of customers or regions with similar sales behavior.
-- **Exploratory Data Analysis (EDA)**: Explore the relationships between different variables using techniques like regression, PCA, and clustering.
+- **Classification**: Use techniques such as discriminant analysis to classify regions, products, or customer types based on features.
+- **Clustering**: Identify new customer segments or regions with similar sales behaviors.
+- **Exploratory Data Analysis (EDA)**: Examine relationships between variables using regression, PCA, and clustering.
 
-## Analytical Techniques:
-We will use a mix of **relational techniques** and **classification methods**. These include but are not limited to:
+## **Analytical Techniques**
+The project utilizes a combination of statistical and machine learning techniques, including:
 
-- **Principal Component Analysis (PCA)**: For dimensionality reduction and detecting patterns.
-- **Linear and Logistic Regression**: For both prediction and classification tasks.
-- **Cluster Analysis**: To discover natural groupings within the data.
-- **Discriminant Analysis**: To classify categorical variables and assess the accuracy of classification.
-  
-Each analysis will be evaluated using proper statistical validation techniques like cross-validation (e.g., k-fold), residual diagnostics, and accuracy measures to ensure the robustness of our models.
+- **Principal Component Analysis (PCA)**: For dimensionality reduction and pattern detection.
+- **Linear & Logistic Regression**: For prediction and classification.
+- **Cluster Analysis**: To discover natural groupings in the data.
+- **Discriminant Analysis**: To classify categorical variables and assess classification accuracy.
 
-## Project Structure:
-- `data/`: Contains the dataset used for analysis.
-- `notebooks/`: Contains Jupyter notebooks for data cleaning, exploration, and analysis.
-- `reports/`: Final project reports, including both technical and non-technical summaries.
-- `scripts/`: Python scripts for various analyses (PCA, clustering, regression models, etc.).
-- `visualizations/`: Plots and graphs generated during the analysis.
+Each method will be validated using appropriate statistical techniques such as cross-validation, residual diagnostics, and accuracy metrics.
 
-### Deliverables:
-1. **Non-Technical Summary**: A report summarizing our findings for a non-technical audience.
-2. **Technical Summary**: Detailed statistical analysis and modeling report with graphs.
-3. **Individual Contributions**: Each team member will provide a 1-2 page report detailing their specific contributions and learnings from the project.
-
-## Tools & Technologies:
-We are using the following tools for our analysis:
-- **Python**: For data processing and model building (pandas, scikit-learn, statsmodels, etc.).
-- **Jupyter Notebooks**: For organizing the code and visualizations.
-- **Matplotlib/Seaborn**: For generating graphs and visualizations.
-- **Other tools**: R, SAS, or SPSS as needed for specialized analyses.
-
-
-
-## Conclusion:
-This project will combine multiple multivariate techniques to draw insights from sales data. Our goal is to provide actionable conclusions that could improve the operations of a coffee chain, based on sales, profits, and customer segmentation.
+## **Project Structure**
+The analysis and deliverables are structured as follows:
 
