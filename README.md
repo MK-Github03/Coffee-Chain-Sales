@@ -1,33 +1,114 @@
-# **Coffee Chain Sales Data Analysis**
+# ☕ Coffee Chain Sales Data Analysis
 
-## **Project Overview**
-This project focuses on applying multivariate techniques to analyze a large sales dataset from a coffee chain. The objective is to uncover patterns, develop predictive models, and derive actionable business insights from the data.
+This project explores and analyzes the **Coffee Chain Sales dataset** to uncover business insights, identify outliers, assess variable distributions, and apply statistical transformations for better modeling readiness.
 
-## **Dataset**
-The dataset contains sales information, including product categories, regional sales, profits, and time-based trends. It includes a mix of categorical and continuous variables, making it suitable for advanced analytical techniques.
+---
 
-- **Dataset File**: [`Coffee_Chain_Sales.csv`](https://github.com/midnightsun257/Coffee-Chain-Sales/blob/main/Updated_Coffee_Chain_Sales.csv)
-- **Total Variables**: Over 20 variables, including metric, ordinal, and categorical types.
-- **Observations**: 400+ entries.
+## 📊 Project Overview
 
-## **Project Goals**
-The analysis aims to achieve the following:
+The main objectives of this analysis are:
 
-- **Predictive Modeling**: Develop models to predict continuous variables such as sales and profit.
-- **Classification**: Use techniques such as discriminant analysis to classify regions, products, or customer types based on features.
-- **Clustering**: Identify new customer segments or regions with similar sales behaviors.
-- **Exploratory Data Analysis (EDA)**: Examine relationships between variables using regression, PCA, and clustering.
+* Perform **Exploratory Data Analysis (EDA)** to understand the distribution, correlations, and anomalies within the dataset.
+* Detect and handle **skewness** in numerical variables, especially `Profit`, through various transformations.
+* Visualize insights to assist in making data-driven business decisions.
 
-## **Analytical Techniques**
-The project utilizes a combination of statistical and machine learning techniques, including:
+---
 
-- **Principal Component Analysis (PCA)**: For dimensionality reduction and pattern detection.
-- **Linear & Logistic Regression**: For prediction and classification.
-- **Cluster Analysis**: To discover natural groupings in the data.
-- **Discriminant Analysis**: To classify categorical variables and assess classification accuracy.
+## 📁 Files Included
 
-Each method will be validated using appropriate statistical techniques such as cross-validation, residual diagnostics, and accuracy metrics.
+| File Name                        | Description                                                                       |
+| -------------------------------- | --------------------------------------------------------------------------------- |
+| `Coffee_Chain_Sales.csv`         | Original dataset                                                                  |
+| `Updated_Coffee_Chain_Sales.csv` | Cleaned and updated dataset                                                       |
+| `EDA_MK.R`                       | Script for initial EDA, correlation matrix, outlier detection, and histograms     |
+| `Log_Trans_MK.R`                 | Advanced data transformation including log, square root, Box-Cox, and Yeo-Johnson |
+| `project.Rmd`                    | R Markdown document summarizing the workflow and visuals (report-ready format)    |
 
-## **Project Structure**
-The analysis and deliverables are structured as follows:
+---
+
+## 🔍 EDA Highlights
+
+Performed in `EDA_MK.R`:
+
+* Summary statistics for numerical and categorical variables
+* Missing value check (none found)
+* Correlation matrix to identify strong linear relationships
+* Boxplot visualization of `Profit` to detect outliers
+* Histogram plots for all numeric features
+
+---
+
+## 🔁 Data Transformation
+
+Performed in `Log_Trans_MK.R`:
+
+**Skewness Reduction Techniques:**
+
+* Log Transformation
+* Square Root Transformation
+* Box-Cox Transformation (λ optimized)
+* Yeo-Johnson Transformation (via `caret::preProcess`)
+
+**Profit Variable Transformation Example:**
+
+| Transformation | Skewness |
+| -------------- | -------- |
+| Original       | High     |
+| Log            | Reduced  |
+| Square Root    | Reduced  |
+| Box-Cox        | Optimal  |
+| Yeo-Johnson    | Optimal  |
+
+**Additional Transformed Variables:**
+
+* `Log_Profit`
+* `Log_Sales`
+* `Log_Total_expenses`
+
+**Exported File:**
+📁 `Updated_Coffee_Chain_Sales_with_Log_Transforms.csv` – includes all transformed columns
+
+---
+
+## 📈 Visualizations
+
+* Histograms (before vs after transformation)
+* Correlation matrices (pre and post transformation)
+* Boxplots for outlier detection
+* Distribution comparisons
+
+---
+
+## 💡 Key Takeaways
+
+* `Profit`, `Sales`, and `Total_expenses` were highly skewed — log-based transformations improved normality.
+* Box-Cox and Yeo-Johnson methods were most effective in reducing skewness.
+* Insights derived can support better modeling, forecasting, and decision-making for business operations.
+
+---
+
+## 🛠️ Tools Used
+
+* Language: **R**
+* Libraries: `ggplot2`, `dplyr`, `MASS`, `e1071`, `caret`, `corrplot`
+
+---
+
+## 📌 How to Run
+
+1. Install required R packages (listed in the scripts).
+2. Load the dataset using `read.csv`.
+3. Source and run either `EDA_MK.R` or `Log_Trans_MK.R`.
+4. View results in RStudio Plots or export as needed from `project.Rmd`.
+
+---
+
+## 📬 Contact
+
+Created by **Manoj Kumar Ashok**
+📧 [Email Me](mailto:your-email@example.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/manoj-kumar-ashok-078241211/)
+🐙 [GitHub](https://github.com/MK-Github03)
+
+---
 
